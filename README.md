@@ -35,11 +35,13 @@ Explore the interactive dashboard built in **Tableau Public**:
 👉 [COVID-19 Dashboard – Tableau](https://public.tableau.com/app/profile/maryam.valipour/viz/covid19_dashboard_17593376812050/Dashboard1)  
 
 ### Preview
-![Dashboard Preview](images/dashboard.png)
+![Dashboard Preview](images/covid19_dashboard.png)
 
 ---
 
 ## 🔹 Project Structure
+```
+.
 covid19-sql-data-exploration/
 │
 ├── data/                      # Raw datasets
@@ -51,6 +53,7 @@ covid19-sql-data-exploration/
 │
 ├── README.md                  # Project documentation
 └── covid_data_exploration.sql # Main SQL script with data exploration & analysis
+```
 
 ---
 
