@@ -1,22 +1,7 @@
 # COVID-19 SQL Data Exploration
 
-This project explores global COVID-19 data using **SQL (T-SQL, SQL Server)**.  
+This explores global COVID-19 data using **SQL (T-SQL, SQL Server)**.  
 It analyzes cases, deaths, testing, and vaccination progress across countries and continents.
-
----
-
-## 🔹 Project Overview
-The purpose of this project is to:
-- Showcase **SQL data exploration and analysis skills**.
-- Derive meaningful insights from the COVID-19 dataset.
-- Build reusable queries for **visualization in BI tools** (Power BI, Tableau, etc.).
-
-**Skills demonstrated:**
-- Joins, CTEs, Temp Tables, Views  
-- Window Functions & Aggregate Functions  
-- Data Type Conversion  
-- Time-series rollups (weekly, monthly trends)  
-- KPI calculations (Case Fatality Rate, Positivity Rate, Vaccination Coverage)  
 
 ---
 
@@ -43,11 +28,6 @@ The purpose of this project is to:
    - Daily global totals with CFR  
    - Continental comparisons over time  
 
-4. **Advanced Metrics**
-   - Testing vs cases → Positivity Rate  
-   - Hospital capacity (beds/1k) vs deaths  
-   - GDP per capita vs COVID outcomes  
-
 ---
 
 ## 🔹 Dashboard
@@ -62,13 +42,13 @@ Explore the interactive dashboard built in **Tableau Public**:
 ## 🔹 Project Structure
 covid19-sql-data-exploration/
 │
-├── covid_exploration.sql # Main SQL script with data exploration & analysis
+├── covid_data_exploration.sql # Main SQL script with data exploration & analysis
 ├── README.md # Project documentation
 ├── data
 │ └── CovidDeaths.xlsx
 │ └── CovidVaccinations.xlsx
 ├── images/ # Folder for screenshots & dashboard previews
-│ └── dashboard.png
+│ └── covid19_dashboard.png
 
 ---
 
@@ -76,7 +56,6 @@ covid19-sql-data-exploration/
 1. Clone this repository:
    ```bash
    git clone https://github.com/<your-username>/covid19-sql-data-exploration.git
-
 2. Open `covid_exploration.sql` in **SQL Server Management Studio** or **Azure Data Studio**.  
 3. Update schema prefixes if needed (e.g., `PortfolioProject..` → `dbo.`).  
 4. Execute queries incrementally, or run all to create helper **views** for BI tools.  
@@ -89,6 +68,3 @@ covid19-sql-data-exploration/
 - Trends: Monthly and weekly case/death rollups
 - Testing vs Cases: Positivity proxies using tests vs cases
 - Top 10 Vaccinated Countries: Vaccination coverage leaderboard
-
-
-📌 Data Source: [Our World in Data – COVID-19 Dataset](https://ourworldindata.org/covid-deaths)
