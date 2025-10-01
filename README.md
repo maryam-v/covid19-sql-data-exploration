@@ -42,13 +42,15 @@ Explore the interactive dashboard built in **Tableau Public**:
 ## 🔹 Project Structure
 covid19-sql-data-exploration/
 │
-├── covid_data_exploration.sql # Main SQL script with data exploration & analysis
-├── README.md # Project documentation
-├── data
-│ └── CovidDeaths.xlsx
-│ └── CovidVaccinations.xlsx
-├── images/ # Folder for screenshots & dashboard previews
-│ └── covid19_dashboard.png
+├── data/                      # Raw datasets
+│   ├── CovidDeaths.xlsx
+│   └── CovidVaccinations.xlsx
+│
+├── images/                    # Screenshots & dashboard previews
+│   └── covid19_dashboard.png
+│
+├── README.md                  # Project documentation
+└── covid_data_exploration.sql # Main SQL script with data exploration & analysis
 
 ---
 
@@ -59,12 +61,3 @@ covid19-sql-data-exploration/
 2. Open `covid_exploration.sql` in **SQL Server Management Studio** or **Azure Data Studio**.  
 3. Update schema prefixes if needed (e.g., `PortfolioProject..` → `dbo.`).  
 4. Execute queries incrementally, or run all to create helper **views** for BI tools.  
-
-## 🔹 Analyses Summary
-
-- Descriptive KPIs: Total cases, deaths, infection % per population, country & continent leaderboards
-- Vaccination Coverage: Rolling sums and coverage % via window functions
-- Global Timeline: Daily totals + global CFR
-- Trends: Monthly and weekly case/death rollups
-- Testing vs Cases: Positivity proxies using tests vs cases
-- Top 10 Vaccinated Countries: Vaccination coverage leaderboard
