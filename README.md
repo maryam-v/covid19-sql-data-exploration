@@ -1,7 +1,3 @@
-# COVID‑19 SQL Data Exploration (Portfolio Project)
-
-
-This project explores global COVID‑19 dynamics using **SQL Server** across two tables:
 # COVID-19 SQL Data Exploration
 
 This project explores global COVID-19 data using **SQL (T-SQL, SQL Server)**.  
@@ -18,7 +14,7 @@ The purpose of this project is to:
 **Skills demonstrated:**
 - Joins, CTEs, Temp Tables, Views  
 - Window Functions & Aggregate Functions  
-- Data Type Conversion
+- Data Type Conversion  
 - Time-series rollups (weekly, monthly trends)  
 - KPI calculations (Case Fatality Rate, Positivity Rate, Vaccination Coverage)  
 
@@ -50,8 +46,8 @@ The purpose of this project is to:
 4. **Advanced Metrics**
    - Testing vs cases → Positivity Rate  
    - Hospital capacity (beds/1k) vs deaths  
-   - GDP per capita vs COVID outcomes
-     
+   - GDP per capita vs COVID outcomes  
+
 ---
 
 ## 🔹 Dashboard
@@ -63,29 +59,36 @@ Explore the interactive dashboard built in **Tableau Public**:
 
 ---
 
+## 🔹 Project Structure
+covid19-sql-data-exploration/
+│
+├── covid_exploration.sql # Main SQL script with data exploration & analysis
+├── README.md # Project documentation
+├── data
+│ └── CovidDeaths.xlsx
+│ └── CovidVaccinations.xlsx
+├── images/ # Folder for screenshots & dashboard previews
+│ └── dashboard.png
+
+---
+
 ## 🔹 How to Run
 1. Clone this repository:
    ```bash
    git clone https://github.com/<your-username>/covid19-sql-data-exploration.git
 
-- `CovidDeaths` – cases, deaths, and demographic/health indicators (by country, daily)
-- `CovidVaccinations` – tests, vaccinations, and related indicators (by country, daily)
+2. Open `covid_exploration.sql` in **SQL Server Management Studio** or **Azure Data Studio**.  
+3. Update schema prefixes if needed (e.g., `PortfolioProject..` → `dbo.`).  
+4. Execute queries incrementally, or run all to create helper **views** for BI tools.  
 
-## How to Run
-1. Open `covid_exploration.sql` in SQL Server Management Studio / Azure Data Studio.
-2. Update schema prefixes if needed (e.g., `PortfolioProject..` -> `dbo.`).
-3. Execute sections incrementally, or run all to create helper **views** for BI tools.
+## 🔹 Analyses Summary
 
-
-## Analyses
-- **Descriptive KPIs**: Total cases, deaths, percent infected, country and continent leaderboards
-- **Vaccination Coverage**: Rolling sums and coverage % via window functions
-- **Global Timeline**: Daily totals + global CFR
-- **Trends**: Monthly and weekly case/death rollups
-- **Testing vs Cases**: Positivity proxies using tests vs cases
-- **Top 10 Vaccinated Countries**: Coverage leaderboard
-- **Capacity Proxies**: Hospital beds vs total deaths
-- **Socioeconomic Proxies**: GDP per capita vs outcomes
+- Descriptive KPIs: Total cases, deaths, infection % per population, country & continent leaderboards
+- Vaccination Coverage: Rolling sums and coverage % via window functions
+- Global Timeline: Daily totals + global CFR
+- Trends: Monthly and weekly case/death rollups
+- Testing vs Cases: Positivity proxies using tests vs cases
+- Top 10 Vaccinated Countries: Vaccination coverage leaderboard
 
 
----
+📌 Data Source: [Our World in Data – COVID-19 Dataset](https://ourworldindata.org/covid-deaths)
