@@ -50,7 +50,16 @@ The purpose of this project is to:
 4. **Advanced Metrics**
    - Testing vs cases → Positivity Rate  
    - Hospital capacity (beds/1k) vs deaths  
-   - GDP per capita vs COVID outcomes  
+   - GDP per capita vs COVID outcomes
+     
+---
+
+## 🔹 Dashboard
+Explore the interactive dashboard built in **Tableau Public**:  
+👉 [COVID-19 Dashboard – Tableau](https://public.tableau.com/app/profile/maryam.valipour/viz/covid19_dashboard_17593376812050/Dashboard1)  
+
+### Preview
+![Dashboard Preview](images/dashboard.png)
 
 ---
 
